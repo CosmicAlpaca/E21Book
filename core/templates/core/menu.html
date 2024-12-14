@@ -1,0 +1,5 @@
+{% for category in categories %}
+    <div class="my-2">
+        <a href="{% url 'category_detail' category.slug %}" class="text-white">{{ category.title }}</a>
+    </div>
+{% endfor %}
